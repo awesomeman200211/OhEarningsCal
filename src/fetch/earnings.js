@@ -7,7 +7,7 @@ const NASDAQ_URL = 'https://api.nasdaq.com/api/calendar/earnings';
 
 // Window we keep on disk: yesterday + next 30 days.
 const BEFORE_DAYS = 1;
-const AHEAD_DAYS = 31;
+const AHEAD_DAYS = 61;
 
 async function fetchOneDay(isoDate) {
   const res = await fetchWithRetry(`${NASDAQ_URL}?date=${isoDate}`, {
