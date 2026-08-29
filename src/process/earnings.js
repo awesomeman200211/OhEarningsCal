@@ -3,7 +3,7 @@ import { earningsCacheFile } from '../lib/paths.js';
 import { dateRange, shiftDays, todayISO } from '../lib/date.js';
 import { parseMarketCap } from '../lib/marketcap.js';
 
-const DEFAULT_WINDOW = { before: 30, after: 30 };
+const DEFAULT_WINDOW = { before: 30, after: 60 };
 
 function normalizeTime(raw) {
   if (raw === 'time-pre-market') return 'Pre-market';
